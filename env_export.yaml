@@ -249,4 +249,3 @@ dependencies:
     - smart-settings==1.1
 variables:
   PACKAGES: gm
-prefix: /home/yatin/miniconda3/envs/ilploss
