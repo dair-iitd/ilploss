@@ -1,0 +1,416 @@
+Exception in thread ray_import_thread:
+Traceback (most recent call last):
+  File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+    key = self.subscriber.poll()
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+    self._poll_locked(timeout=timeout)
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+    self._poll_request(), timeout=timeout
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+    (operations,), event_handler, self._context)
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+    _run_channel_spin_thread(state)
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+    channel_spin_thread.start()
+  File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+  File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't start new thread
+
+[2m[36m(pid=90490)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90490)[0m Traceback (most recent call last):
+[2m[36m(pid=90490)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90490)[0m     self.run()
+[2m[36m(pid=90490)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90490)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90490)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90490)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90490)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90490)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90490)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90490)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90490)[0m     channel_spin_thread.start()
+[2m[36m(pid=90490)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90490)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90490)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90490)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90490)[0m 
+[2m[36m(pid=90537)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90537)[0m Traceback (most recent call last):
+[2m[36m(pid=90537)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90537)[0m     self.run()
+[2m[36m(pid=90537)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90537)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90537)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90537)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90537)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90537)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90537)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90537)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90537)[0m     channel_spin_thread.start()
+[2m[36m(pid=90537)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90537)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90537)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90537)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90537)[0m 
+[2m[36m(pid=90508)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90508)[0m Traceback (most recent call last):
+[2m[36m(pid=90508)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90508)[0m     self.run()
+[2m[36m(pid=90508)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90508)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90508)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90508)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90508)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90508)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90508)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90508)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90508)[0m     channel_spin_thread.start()
+[2m[36m(pid=90508)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90508)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90508)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90508)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90508)[0m 
+[2m[36m(pid=90523)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90523)[0m Traceback (most recent call last):
+[2m[36m(pid=90523)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90523)[0m     self.run()
+[2m[36m(pid=90523)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90523)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90523)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90523)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90523)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90523)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90523)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90523)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90523)[0m     channel_spin_thread.start()
+[2m[36m(pid=90523)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90523)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90523)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90523)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90523)[0m 
+[2m[36m(pid=90519)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90519)[0m Traceback (most recent call last):
+[2m[36m(pid=90519)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90519)[0m     self.run()
+[2m[36m(pid=90519)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90519)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90519)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90519)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90519)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90519)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90519)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90519)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90519)[0m     channel_spin_thread.start()
+[2m[36m(pid=90519)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90519)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90519)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90519)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90519)[0m 
+[2m[36m(pid=90491)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90491)[0m Traceback (most recent call last):
+[2m[36m(pid=90491)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90491)[0m     self.run()
+[2m[36m(pid=90491)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90491)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90491)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90491)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90491)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90491)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90491)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90491)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90491)[0m     channel_spin_thread.start()
+[2m[36m(pid=90491)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90491)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90491)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90491)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90491)[0m 
+[2m[36m(pid=90520)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90520)[0m Traceback (most recent call last):
+[2m[36m(pid=90520)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90520)[0m     self.run()
+[2m[36m(pid=90520)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90520)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90520)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90520)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90520)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90520)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90520)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90520)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90520)[0m     channel_spin_thread.start()
+[2m[36m(pid=90520)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90520)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90520)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90520)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90520)[0m 
+[2m[36m(pid=90504)[0m Exception in thread ray_import_thread:
+[2m[36m(pid=90504)[0m Traceback (most recent call last):
+[2m[36m(pid=90504)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(pid=90504)[0m     self.run()
+[2m[36m(pid=90504)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 864, in run
+[2m[36m(pid=90504)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/import_thread.py", line 67, in _run
+[2m[36m(pid=90504)[0m     key = self.subscriber.poll()
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 410, in poll
+[2m[36m(pid=90504)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/ray/_private/gcs_pubsub.py", line 266, in _poll_locked
+[2m[36m(pid=90504)[0m     self._poll_request(), timeout=timeout
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(pid=90504)[0m     (operations,), event_handler, self._context)
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(pid=90504)[0m     _run_channel_spin_thread(state)
+[2m[36m(pid=90504)[0m   File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(pid=90504)[0m     channel_spin_thread.start()
+[2m[36m(pid=90504)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(pid=90504)[0m   File "/home/rishabh/miniconda3/envs/comboptnet/lib/python3.6/threading.py", line 846, in start
+[2m[36m(pid=90504)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(pid=90504)[0m RuntimeError: can't start new thread
+[2m[36m(pid=90504)[0m 
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+LLVM ERROR: pthread_create failed: Resource temporarily unavailable
+*** SIGABRT received at time=1652928744 on cpu 6 ***
+PC: @     0x7fe7453e2428  (unknown)  raise
+    @     0x7fe745788390       3904  (unknown)
+    @     0x7fe6e7352cb1         48  llvm::report_fatal_error()
+    @     0x7fe6e72e4100         96  ReportErrnumFatal()
+    @     0x7fe6e72e42f8        128  llvm::llvm_execute_on_thread_impl()
+    @     0x7fe6e72e479d         48  llvm::thread::thread<>()
+    @     0x7fe6e72e6871        144  llvm::ThreadPool::ThreadPool()
+    @     0x7fe6e71fc74f        496  mlir::MLIRContext::MLIRContext()
+    @     0x7fe6e71fca19        160  mlir::MLIRContext::MLIRContext()
+    @     0x7fe6e4ed20cc       2528  xla::cpu::CpuCompiler::RunBackend()
+    @     0x7fe6e4ebe57a       4432  xla::TfrtCpuClient::Compile()
+    @     0x7fe6e4dfd2b5        976  xla::PyClient::Compile()
+    @     0x7fe6e4b67b5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+    @     0x7fe6e4b68434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7fe6e4b49821        544  pybind11::cpp_function::dispatcher()
+    @     0x561a13e9d562  203712568  _PyCFunction_FastCallDict
+    @     0x561a1400d660  (unknown)  (unknown)
+[2022-05-19 08:22:24,158 E 75763 94761] logging.cc:325: *** SIGABRT received at time=1652928744 on cpu 6 ***
+[2022-05-19 08:22:24,159 E 75763 94761] logging.cc:325: PC: @     0x7fe7453e2428  (unknown)  raise
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe745788390       3904  (unknown)
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e7352cb1         48  llvm::report_fatal_error()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e72e4100         96  ReportErrnumFatal()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e72e42f8        128  llvm::llvm_execute_on_thread_impl()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e72e479d         48  llvm::thread::thread<>()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e72e6871        144  llvm::ThreadPool::ThreadPool()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e71fc74f        496  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e71fca19        160  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:22:24,162 E 75763 94761] logging.cc:325:     @     0x7fe6e4ed20cc       2528  xla::cpu::CpuCompiler::RunBackend()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x7fe6e4ebe57a       4432  xla::TfrtCpuClient::Compile()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x7fe6e4dfd2b5        976  xla::PyClient::Compile()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x7fe6e4b67b5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x7fe6e4b68434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x7fe6e4b49821        544  pybind11::cpp_function::dispatcher()
+[2022-05-19 08:22:24,163 E 75763 94761] logging.cc:325:     @     0x561a13e9d562  203712568  _PyCFunction_FastCallDict
+[2022-05-19 08:22:24,167 E 75763 94761] logging.cc:325:     @     0x561a1400d660  (unknown)  (unknown)
+Fatal Python error: Aborted
+
+Stack (most recent call first):
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 360 in backend_compile
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 297 in xla_primitive_callable
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 179 in cached
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 186 in wrapper
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 248 in apply_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 603 in process_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 264 in bind
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 434 in linear_jvp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 283 in process_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 264 in bind
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/lax/lax.py", line 735 in broadcast_in_dim
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/lax/lax.py", line 3880 in expand_dims
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 1474 in expand_dims
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 5038 in _gather
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 5010 in _rewriting_take
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 533 in __getitem__
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/utils/comboptnet_utils.py", line 68 in signed_euclidean_distance_constraint_point
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/utils/comboptnet_utils.py", line 74 in check_point_feasibility
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 230 in mismatch_function
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/linear_util.py", line 166 in call_wrapped
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/partial_eval.py", line 505 in trace_to_jaxpr
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 102 in linearize
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 115 in vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 1997 in _vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 901 in value_and_grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 829 in grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 123 in backward
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/torch/autograd/function.py", line 77 in apply
+Command terminated by signal 6
+6.21user 2.40system 0:31.89elapsed 27%CPU (0avgtext+0avgdata 1995220maxresident)k
+1888inputs+48outputs (0major+329851minor)pagefaults 0swaps
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+Successfully loaded Static Constraints dataset.
+Number of distinct solutions in train set: 1593
+Number of distinct solutions in test set: 996
+[2m[36m(ilp_solver pid=25980)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25980)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25988)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25988)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25978)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25978)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25976)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25976)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25991)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25991)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25977)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25977)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25982)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25982)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=25979)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=25979)[0m Using license file /home/rishabh/gurobi.lic
+Evaluation:: Loss: 0.2723, Perfect acc: 0.0000
+Epoch:  1, Train loss: 0.2360, Perfect acc: 0.0006
+Epoch:  2, Train loss: 0.1932, Perfect acc: 0.0019
+Epoch:  3, Train loss: 0.1718, Perfect acc: 0.0037
+Epoch:  4, Train loss: 0.1573, Perfect acc: 0.0063
+Epoch:  5, Train loss: 0.1481, Perfect acc: 0.0075
+Epoch:  6, Train loss: 0.1404, Perfect acc: 0.0112
+Epoch:  7, Train loss: 0.1346, Perfect acc: 0.0144
+Epoch:  8, Train loss: 0.1295, Perfect acc: 0.0181
+Epoch:  9, Train loss: 0.1249, Perfect acc: 0.0213
+Epoch: 10, Train loss: 0.1213, Perfect acc: 0.0244
+Evaluation:: Loss: 0.1219, Perfect acc: 0.0180
+Epoch: 11, Train loss: 0.1180, Perfect acc: 0.0262
+Epoch: 12, Train loss: 0.1147, Perfect acc: 0.0275
+Epoch: 13, Train loss: 0.1110, Perfect acc: 0.0331
+Epoch: 14, Train loss: 0.1075, Perfect acc: 0.0325
+Epoch: 15, Train loss: 0.1034, Perfect acc: 0.0338
+Epoch: 16, Train loss: 0.0988, Perfect acc: 0.0356
+Epoch: 17, Train loss: 0.0939, Perfect acc: 0.0350
+Epoch: 18, Train loss: 0.0898, Perfect acc: 0.0381
+Epoch: 19, Train loss: 0.0852, Perfect acc: 0.0425
+Epoch: 20, Train loss: 0.0817, Perfect acc: 0.0431
+Evaluation:: Loss: 0.0820, Perfect acc: 0.0340
+Epoch: 21, Train loss: 0.0771, Perfect acc: 0.0456
+Epoch: 22, Train loss: 0.0726, Perfect acc: 0.0462
+Epoch: 23, Train loss: 0.0704, Perfect acc: 0.0488
+[2m[36m(ilp_solver pid=14054)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=14054)[0m Using license file /home/rishabh/gurobi.lic
+Epoch: 24, Train loss: 0.0667, Perfect acc: 0.0481
+Epoch: 25, Train loss: 0.0649, Perfect acc: 0.0544
+Epoch: 26, Train loss: 0.0628, Perfect acc: 0.0581
+Epoch: 27, Train loss: 0.0612, Perfect acc: 0.0594
+Epoch: 28, Train loss: 0.0588, Perfect acc: 0.0669
+Epoch: 29, Train loss: 0.0575, Perfect acc: 0.0656
+Epoch: 30, Train loss: 0.0558, Perfect acc: 0.0756
+Evaluation:: Loss: 0.0566, Perfect acc: 0.0570
+Epoch: 31, Train loss: 0.0536, Perfect acc: 0.0700
+Epoch: 32, Train loss: 0.0512, Perfect acc: 0.0750
+Epoch: 33, Train loss: 0.0495, Perfect acc: 0.0756
+Epoch: 34, Train loss: 0.0483, Perfect acc: 0.0800
+Epoch: 35, Train loss: 0.0464, Perfect acc: 0.0813
+Epoch: 36, Train loss: 0.0449, Perfect acc: 0.0781
+Epoch: 37, Train loss: 0.0432, Perfect acc: 0.0813
+Epoch: 38, Train loss: 0.0420, Perfect acc: 0.0912
+Epoch: 39, Train loss: 0.0396, Perfect acc: 0.0944
+Epoch: 40, Train loss: 0.0388, Perfect acc: 0.0994
+Evaluation:: Loss: 0.0399, Perfect acc: 0.0840
+Epoch: 41, Train loss: 0.0373, Perfect acc: 0.1056
+Epoch: 42, Train loss: 0.0368, Perfect acc: 0.1150
+Epoch: 43, Train loss: 0.0357, Perfect acc: 0.1181
+Epoch: 44, Train loss: 0.0348, Perfect acc: 0.1237
+Epoch: 45, Train loss: 0.0339, Perfect acc: 0.1300
+Epoch: 46, Train loss: 0.0326, Perfect acc: 0.1469
+Epoch: 47, Train loss: 0.0323, Perfect acc: 0.1494
+Epoch: 48, Train loss: 0.0318, Perfect acc: 0.1475
+Epoch: 49, Train loss: 0.0302, Perfect acc: 0.1794
+Epoch: 50, Train loss: 0.0299, Perfect acc: 0.1850
+Evaluation:: Loss: 0.0307, Perfect acc: 0.1520
+Epoch: 51, Train loss: 0.0299, Perfect acc: 0.1869
+Epoch: 52, Train loss: 0.0295, Perfect acc: 0.1963
+Epoch: 53, Train loss: 0.0292, Perfect acc: 0.1894
+Epoch: 54, Train loss: 0.0284, Perfect acc: 0.2200
+Epoch: 55, Train loss: 0.0285, Perfect acc: 0.2031
+Epoch: 56, Train loss: 0.0278, Perfect acc: 0.2200
+Epoch: 57, Train loss: 0.0281, Perfect acc: 0.2106
+Epoch: 58, Train loss: 0.0282, Perfect acc: 0.2081
+Epoch: 59, Train loss: 0.0278, Perfect acc: 0.2250
+Epoch: 60, Train loss: 0.0277, Perfect acc: 0.2137
+Evaluation:: Loss: 0.0274, Perfect acc: 0.2030
+Epoch: 61, Train loss: 0.0276, Perfect acc: 0.2256
+Epoch: 62, Train loss: 0.0273, Perfect acc: 0.2019
+Epoch: 63, Train loss: 0.0270, Perfect acc: 0.2213
+Epoch: 64, Train loss: 0.0267, Perfect acc: 0.2362
+Epoch: 65, Train loss: 0.0266, Perfect acc: 0.2425
+Epoch: 66, Train loss: 0.0267, Perfect acc: 0.2188
+Epoch: 67, Train loss: 0.0264, Perfect acc: 0.2206
+Epoch: 68, Train loss: 0.0263, Perfect acc: 0.2244
+Epoch: 69, Train loss: 0.0263, Perfect acc: 0.2369
+Epoch: 70, Train loss: 0.0259, Perfect acc: 0.2381
+Evaluation:: Loss: 0.0261, Perfect acc: 0.2110
+Epoch: 71, Train loss: 0.0266, Perfect acc: 0.2225
+Epoch: 72, Train loss: 0.0263, Perfect acc: 0.2362
+Epoch: 73, Train loss: 0.0266, Perfect acc: 0.2325
+Epoch: 74, Train loss: 0.0267, Perfect acc: 0.2200
+Epoch: 75, Train loss: 0.0262, Perfect acc: 0.2169
+Epoch: 76, Train loss: 0.0263, Perfect acc: 0.2263
+Epoch: 77, Train loss: 0.0267, Perfect acc: 0.2075
+Epoch: 78, Train loss: 0.0258, Perfect acc: 0.2394
+Epoch: 79, Train loss: 0.0253, Perfect acc: 0.2369
+Epoch: 80, Train loss: 0.0253, Perfect acc: 0.2525
+Evaluation:: Loss: 0.0250, Perfect acc: 0.2500
+Epoch: 81, Train loss: 0.0253, Perfect acc: 0.2494
+Epoch: 82, Train loss: 0.0252, Perfect acc: 0.2331
+Epoch: 83, Train loss: 0.0263, Perfect acc: 0.2087
+Epoch: 84, Train loss: 0.0259, Perfect acc: 0.2281
+Epoch: 85, Train loss: 0.0257, Perfect acc: 0.2225
+Epoch: 86, Train loss: 0.0256, Perfect acc: 0.2362
+Epoch: 87, Train loss: 0.0258, Perfect acc: 0.2319
+Epoch: 88, Train loss: 0.0250, Perfect acc: 0.2281
+Epoch: 89, Train loss: 0.0248, Perfect acc: 0.2306
+Epoch: 90, Train loss: 0.0247, Perfect acc: 0.2300
+Evaluation:: Loss: 0.0253, Perfect acc: 0.2340
+Epoch: 91, Train loss: 0.0252, Perfect acc: 0.2319
+Epoch: 92, Train loss: 0.0251, Perfect acc: 0.2338
+Epoch: 93, Train loss: 0.0247, Perfect acc: 0.2331
+Epoch: 94, Train loss: 0.0248, Perfect acc: 0.2256
+Epoch: 95, Train loss: 0.0245, Perfect acc: 0.2331
+Epoch: 96, Train loss: 0.0245, Perfect acc: 0.2225
+Epoch: 97, Train loss: 0.0246, Perfect acc: 0.2331
+Epoch: 98, Train loss: 0.0243, Perfect acc: 0.2225
+Epoch: 99, Train loss: 0.0250, Perfect acc: 0.2338
+Epoch: 100, Train loss: 0.0246, Perfect acc: 0.2069
+Evaluation:: Loss: 0.0238, Perfect acc: 0.2020
+Evaluation:: Loss: 0.0238, Perfect acc: 0.2020
+./main.py conf/${t}/${m}x16/${i}.yaml  1856.84s user 63.51s system 74% cpu 43:08.11 total

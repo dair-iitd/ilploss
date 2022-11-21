@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = false
+
+[[source]]
+name = "gurobi"
+url = "https://pypi.gurobi.com"
+verify_ssl = false
+
+[dev-packages]
+
+[packages]
+numpy = "*"
+torch = "==1.5.0"
+ray = "*"
+jax = ">=0.2.8"
+jaxlib = ">=0.1.58"
+cvxpy = "*"
+cvxpylayers = "*"
+
+gurobipy = { version = "*", index = "gurobi" }
+
+smart-settings = { git = "https://github.com/martius-lab/smart-settings.git" }
+
+
+[requires]
+python_version = "3.7"

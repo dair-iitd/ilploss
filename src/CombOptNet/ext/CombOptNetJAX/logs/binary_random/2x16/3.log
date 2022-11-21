@@ -1,0 +1,136 @@
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+Successfully loaded Static Constraints dataset.
+Number of distinct solutions in train set: 1470
+Number of distinct solutions in test set: 947
+[2m[36m(ilp_solver pid=132120)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132120)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132117)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132117)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132110)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132110)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132104)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132104)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132126)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132126)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132130)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132130)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132101)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132101)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=132135)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=132135)[0m Using license file /home/rishabh/gurobi.lic
+Evaluation:: Loss: 0.3281, Perfect acc: 0.0000
+Epoch:  1, Train loss: 0.2224, Perfect acc: 0.0275
+Epoch:  2, Train loss: 0.1387, Perfect acc: 0.1150
+Epoch:  3, Train loss: 0.1186, Perfect acc: 0.1762
+Epoch:  4, Train loss: 0.1107, Perfect acc: 0.2000
+Epoch:  5, Train loss: 0.1059, Perfect acc: 0.2156
+Epoch:  6, Train loss: 0.0980, Perfect acc: 0.2381
+Epoch:  7, Train loss: 0.0918, Perfect acc: 0.2600
+Epoch:  8, Train loss: 0.0859, Perfect acc: 0.2800
+Epoch:  9, Train loss: 0.0811, Perfect acc: 0.3075
+Epoch: 10, Train loss: 0.0731, Perfect acc: 0.3669
+Evaluation:: Loss: 0.0750, Perfect acc: 0.3370
+Epoch: 11, Train loss: 0.0674, Perfect acc: 0.4031
+Epoch: 12, Train loss: 0.0602, Perfect acc: 0.4575
+Epoch: 13, Train loss: 0.0536, Perfect acc: 0.5238
+Epoch: 14, Train loss: 0.0467, Perfect acc: 0.5856
+Epoch: 15, Train loss: 0.0400, Perfect acc: 0.6575
+Epoch: 16, Train loss: 0.0324, Perfect acc: 0.7181
+Epoch: 17, Train loss: 0.0282, Perfect acc: 0.7544
+Epoch: 18, Train loss: 0.0249, Perfect acc: 0.7850
+Epoch: 19, Train loss: 0.0237, Perfect acc: 0.7987
+Epoch: 20, Train loss: 0.0218, Perfect acc: 0.8119
+Evaluation:: Loss: 0.0241, Perfect acc: 0.8010
+Epoch: 21, Train loss: 0.0214, Perfect acc: 0.8169
+Epoch: 22, Train loss: 0.0197, Perfect acc: 0.8337
+Epoch: 23, Train loss: 0.0177, Perfect acc: 0.8506
+Epoch: 24, Train loss: 0.0125, Perfect acc: 0.8925
+Epoch: 25, Train loss: 0.0105, Perfect acc: 0.9125
+Epoch: 26, Train loss: 0.0093, Perfect acc: 0.9244
+Epoch: 27, Train loss: 0.0079, Perfect acc: 0.9356
+Epoch: 28, Train loss: 0.0076, Perfect acc: 0.9375
+Epoch: 29, Train loss: 0.0062, Perfect acc: 0.9487
+Epoch: 30, Train loss: 0.0061, Perfect acc: 0.9481
+Evaluation:: Loss: 0.0069, Perfect acc: 0.9490
+Epoch: 31, Train loss: 0.0062, Perfect acc: 0.9469
+Epoch: 32, Train loss: 0.0069, Perfect acc: 0.9463
+Epoch: 33, Train loss: 0.0081, Perfect acc: 0.9363
+Epoch: 34, Train loss: 0.0045, Perfect acc: 0.9637
+Epoch: 35, Train loss: 0.0068, Perfect acc: 0.9500
+Epoch: 36, Train loss: 0.0048, Perfect acc: 0.9619
+Epoch: 37, Train loss: 0.0049, Perfect acc: 0.9637
+Epoch: 38, Train loss: 0.0048, Perfect acc: 0.9619
+Epoch: 39, Train loss: 0.0046, Perfect acc: 0.9625
+Epoch: 40, Train loss: 0.0059, Perfect acc: 0.9556
+Evaluation:: Loss: 0.0068, Perfect acc: 0.9510
+Epoch: 41, Train loss: 0.0060, Perfect acc: 0.9500
+Epoch: 42, Train loss: 0.0059, Perfect acc: 0.9575
+Epoch: 43, Train loss: 0.0054, Perfect acc: 0.9594
+Epoch: 44, Train loss: 0.0055, Perfect acc: 0.9556
+Epoch: 45, Train loss: 0.0049, Perfect acc: 0.9631
+Epoch: 46, Train loss: 0.0062, Perfect acc: 0.9506
+Epoch: 47, Train loss: 0.0068, Perfect acc: 0.9463
+Epoch: 48, Train loss: 0.0049, Perfect acc: 0.9581
+Epoch: 49, Train loss: 0.0051, Perfect acc: 0.9575
+Epoch: 50, Train loss: 0.0057, Perfect acc: 0.9556
+Evaluation:: Loss: 0.0070, Perfect acc: 0.9500
+Epoch: 51, Train loss: 0.0063, Perfect acc: 0.9494
+Epoch: 52, Train loss: 0.0056, Perfect acc: 0.9537
+Epoch: 53, Train loss: 0.0064, Perfect acc: 0.9513
+Epoch: 54, Train loss: 0.0064, Perfect acc: 0.9500
+Epoch: 55, Train loss: 0.0065, Perfect acc: 0.9463
+Epoch: 56, Train loss: 0.0066, Perfect acc: 0.9481
+Epoch: 57, Train loss: 0.0055, Perfect acc: 0.9575
+Epoch: 58, Train loss: 0.0048, Perfect acc: 0.9631
+Epoch: 59, Train loss: 0.0049, Perfect acc: 0.9613
+Epoch: 60, Train loss: 0.0052, Perfect acc: 0.9569
+Evaluation:: Loss: 0.0064, Perfect acc: 0.9520
+Epoch: 61, Train loss: 0.0059, Perfect acc: 0.9494
+Epoch: 62, Train loss: 0.0066, Perfect acc: 0.9494
+Epoch: 63, Train loss: 0.0067, Perfect acc: 0.9513
+Epoch: 64, Train loss: 0.0055, Perfect acc: 0.9575
+Epoch: 65, Train loss: 0.0053, Perfect acc: 0.9569
+Epoch: 66, Train loss: 0.0048, Perfect acc: 0.9600
+Epoch: 67, Train loss: 0.0054, Perfect acc: 0.9594
+Epoch: 68, Train loss: 0.0058, Perfect acc: 0.9544
+Epoch: 69, Train loss: 0.0055, Perfect acc: 0.9569
+Epoch: 70, Train loss: 0.0054, Perfect acc: 0.9587
+Evaluation:: Loss: 0.0099, Perfect acc: 0.9210
+Epoch: 71, Train loss: 0.0071, Perfect acc: 0.9431
+Epoch: 72, Train loss: 0.0044, Perfect acc: 0.9650
+Epoch: 73, Train loss: 0.0042, Perfect acc: 0.9694
+Epoch: 74, Train loss: 0.0080, Perfect acc: 0.9400
+Epoch: 75, Train loss: 0.0059, Perfect acc: 0.9531
+Epoch: 76, Train loss: 0.0067, Perfect acc: 0.9450
+Epoch: 77, Train loss: 0.0061, Perfect acc: 0.9556
+Epoch: 78, Train loss: 0.0061, Perfect acc: 0.9506
+Epoch: 79, Train loss: 0.0048, Perfect acc: 0.9606
+Epoch: 80, Train loss: 0.0046, Perfect acc: 0.9619
+Evaluation:: Loss: 0.0063, Perfect acc: 0.9550
+Epoch: 81, Train loss: 0.0060, Perfect acc: 0.9556
+Epoch: 82, Train loss: 0.0061, Perfect acc: 0.9500
+Epoch: 83, Train loss: 0.0070, Perfect acc: 0.9475
+Epoch: 84, Train loss: 0.0064, Perfect acc: 0.9475
+Epoch: 85, Train loss: 0.0086, Perfect acc: 0.9356
+[2m[36m(ilp_solver pid=139813)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=139813)[0m Using license file /home/rishabh/gurobi.lic
+Epoch: 86, Train loss: 0.0059, Perfect acc: 0.9525
+Epoch: 87, Train loss: 0.0056, Perfect acc: 0.9569
+Epoch: 88, Train loss: 0.0066, Perfect acc: 0.9494
+Epoch: 89, Train loss: 0.0062, Perfect acc: 0.9506
+Epoch: 90, Train loss: 0.0067, Perfect acc: 0.9444
+Evaluation:: Loss: 0.0082, Perfect acc: 0.9400
+Epoch: 91, Train loss: 0.0078, Perfect acc: 0.9387
+Epoch: 92, Train loss: 0.0054, Perfect acc: 0.9600
+Epoch: 93, Train loss: 0.0074, Perfect acc: 0.9481
+Epoch: 94, Train loss: 0.0065, Perfect acc: 0.9519
+Epoch: 95, Train loss: 0.0069, Perfect acc: 0.9450
+Epoch: 96, Train loss: 0.0062, Perfect acc: 0.9563
+Epoch: 97, Train loss: 0.0045, Perfect acc: 0.9631
+Epoch: 98, Train loss: 0.0060, Perfect acc: 0.9544
+Epoch: 99, Train loss: 0.0065, Perfect acc: 0.9494
+Epoch: 100, Train loss: 0.0071, Perfect acc: 0.9513
+Evaluation:: Loss: 0.0049, Perfect acc: 0.9640
+Evaluation:: Loss: 0.0049, Perfect acc: 0.9640
+2595.01user 86.17system 45:15.93elapsed 98%CPU (0avgtext+0avgdata 1993548maxresident)k
+1888inputs+14144outputs (0major+4186347minor)pagefaults 0swaps

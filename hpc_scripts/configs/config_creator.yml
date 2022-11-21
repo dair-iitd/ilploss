@@ -1,0 +1,35 @@
+
+cross_product_params:
+    #  - name: ${data_path}
+    #    values: ['data/vis_sudoku/sudoku_2x2_1M.pt']
+    #    #values: ['data/vis_sudoku/sudoku_2x3_11214.pt']
+    #    short_name: 'd'
+    #    create_dir: true
+
+  - name: ${renorm} 
+    values: ['false','true']
+    short_name: 'r'
+
+  - name: ${c_lr} 
+    values: [1.0e-3,1.0e-4]
+    short_name: 'clr'
+
+
+param_groups:
+    short_names: ['d','','nc','','']
+    names: ['${data_path}', '${num_vars}', '${num_constraints}', '${num_digits}', '${solver_time_limit}']
+    create_dirs: [true, false, false, false, false]  
+    values_list:
+        - ['data/vis_sudoku/sudoku_2x2_1M.pt', 64, 64, 5, 10]
+        - ['data/vis_sudoku/sudoku_2x3_11214.pt', 216, 300, 7, 10]
+        
+order:  true
+
+config_files:
+ - '../conf/tmp/vis_sudoku/templates/nbr_ce.yaml'
+ - '../conf/tmp/vis_sudoku/templates/nbr_margin.yaml'
+ - '../conf/tmp/vis_sudoku/templates/proj_ce.yaml'
+ - '../conf/tmp/vis_sudoku/templates/proj_margin.yaml'
+
+parse_value_fns:
+    ${data_path}: extract_sudoku_size

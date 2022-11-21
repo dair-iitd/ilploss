@@ -1,0 +1,186 @@
+seed_everything: 42
+
+data:
+  class_path: src.datasets.SudokuDataModule
+  init_args:
+    data_path: data/sudoku_2x3_11214.pt
+    splits:
+      train: 10000
+      val: 100
+      #test: 1000
+      test: 100
+    num_validate_train: 10
+    batch_sizes:
+      train: 10
+      val: 100
+      test: 10
+    num_workers: 4
+
+model:
+  class_path: src.models.SudokuModel
+  init_args:
+    num_classes: 6
+
+    x_key: query/bit
+    y_key: target/bit
+
+    core:
+      class_path: src.cores.SolverFreeCore
+      init_args:
+        encoder:
+          class_path: src.CombOptNet.src.encoders.DisjointEncoder
+          init_args:
+            ab_encoders:
+              - class_path: src.encoders.EqualityABEncoder
+                init_args:
+                  ab_encoder:
+                    class_path: src.CombOptNet.src.encoders.StaticABEncoder
+                    init_args:
+                      num_vars: 216
+                      num_constrs: 109
+
+                  margin: 0.1
+
+            c_encoder:
+              class_path: src.encoders.NegativeCEncoder
+
+        known_ab_encoder:
+          class_path: src.encoders.NullABEncoder
+          init_args:
+            num_vars: 216 
+            #        known_ab_encoder:
+            #          class_path: src.encoders.LUToABEncoder
+            #          init_args:
+            #            lu_encoder:
+            #              class_path: src.encoders.StaticLUEncoder
+            #              init_args:
+            #                num_vars: 216
+            #                lb: 0.0
+            #                ub: 1.0
+
+        sampler:
+          class_path: src.samplers.SamplerList
+          init_args:
+            samplers:
+              - class_path: src.samplers.BitNbrSampler
+
+              - class_path: src.samplers.BitKHopSampler
+                init_args:
+                  num_hops: 2
+                  num_samples: 216
+
+              - class_path: src.samplers.BitKHopSampler
+                init_args:
+                  num_hops: 3
+                  num_samples: 216
+
+              - class_path: src.samplers.BitKHopSampler
+                init_args:
+                  num_hops: 4
+                  num_samples: 216
+
+              - class_path: src.samplers.RandIntNbrWrapper
+                init_args:
+                  sampler:
+                    class_path: src.samplers.ProjSampler
+
+              - class_path: src.samplers.BatchSampler
+
+        criterion:
+          class_path: src.losses.ILPLoss
+          init_args:
+            balancer:
+              class_path: src.losses.CoVBalancer
+              init_args:
+                num_losses: 3
+
+            pos_param: 0.01
+            neg_param: 0.01
+
+
+    solver:
+      class_path: src.CombOptNet.src.ilp.CombOptNet
+      init_args:
+        vtype: B
+        env:
+          class_path: gurobi.Env
+          init_args:
+            params:
+              OutputFlag: 0
+              TimeLimit: 1200
+        num_workers: 10
+        show_tqdm: true
+
+    hint: none
+
+    optimizer:
+      class_path: torch.optim.AdamW
+
+    lr_scheduler:
+      class_path: torch.optim.lr_scheduler.CyclicLR
+      init_args:
+        base_lr: 0.0
+        max_lr: 1.0e-3
+        step_size_up: 2000
+        cycle_momentum: false
+      config:
+        interval: step
+
+    schedulers:
+      temp:
+        class_path: torch.optim.lr_scheduler.ReduceLROnPlateau
+        init_args:
+          mode: max
+          factor: 0.1
+          patience: 4
+        config:
+          monitor: val/acc/idv
+          interval: epoch
+          frequency: 4
+        init: 1.0
+
+trainer:
+  max_epochs: 1_000_000
+  callbacks:
+    - class_path: src.callbacks.Timer
+    - class_path: src.callbacks.CustomLogging
+    - class_path: pytorch_lightning.callbacks.Timer
+      init_args:
+        duration: 01:00:00:00
+        interval: step
+    - class_path: pytorch_lightning.callbacks.EarlyStopping
+      init_args:
+        monitor: val/acc/idv
+        patience: 10
+        mode: max
+        stopping_threshold: 0.999_999
+    - class_path: pytorch_lightning.callbacks.LearningRateMonitor
+      init_args:
+        logging_interval: step
+    - class_path: pytorch_lightning.callbacks.ModelCheckpoint
+      init_args:
+        monitor: val/acc/idv
+        mode: max
+        save_weights_only: true
+        filename: best
+    - class_path: pytorch_lightning.callbacks.ModelCheckpoint
+      init_args:
+        save_last: true
+        train_time_interval: 0:15:0
+        save_on_train_epoch_end: true
+
+  gpus: 0
+  num_sanity_val_steps: 0
+
+  logger:
+    class_path: pytorch_lightning.loggers.CSVLogger
+    init_args:
+      save_dir: runs/neurips
+      name: sudoku/symbolic/ilploss/2x3/wokc_eq
+
+  log_every_n_steps: 100
+  check_val_every_n_epoch: 4
+
+start_val_after_n_epochs: 8
+
+test_only: 1

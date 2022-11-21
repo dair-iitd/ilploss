@@ -1,0 +1,2 @@
+train_loss,train_acc,train_perfect_accuracy,train_match_uncon_accuracy,train_match_uncon_perfect_accuracy,eval_loss,eval_acc,eval_perfect_accuracy,eval_match_uncon_accuracy,eval_match_uncon_perfect_accuracy
+0.0051132812500000015,0.9648828125,0.72,0.901640625,0.34,0.004700000000000003,0.9694375,0.755,0.909625,0.363

@@ -1,0 +1,150 @@
+[2m[36m(ilp_solver pid=149904)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=149904)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=150111)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=150111)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=149908)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=149908)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=149996)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=149996)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=149907)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=149907)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=150081)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=150081)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=150090)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=150090)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+[2m[36m(ilp_solver pid=150089)[0m /home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py:169: UserWarning: Infeasible ILP encountered. Dummy solution should be handled as special case.
+[2m[36m(ilp_solver pid=150089)[0m   f"Infeasible ILP encountered. Dummy solution should be handled as special case."
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+Successfully loaded Static Constraints dataset.
+Number of distinct solutions in train set: 1164
+Number of distinct solutions in test set: 804
+[2m[36m(ilp_solver pid=149904)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=149904)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=150111)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=150111)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=149908)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=149908)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=149996)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=149996)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=150081)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=150081)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=149907)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=149907)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=150089)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=150089)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=150090)[0m Academic license - for non-commercial use only - expires 2023-05-13
+[2m[36m(ilp_solver pid=150090)[0m Using license file /home/rishabh/gurobi.lic
+Evaluation:: Loss: 0.4736, Perfect acc: 0.0000
+Epoch:  1, Train loss: 0.4175, Perfect acc: 0.0006
+Epoch:  2, Train loss: 0.2416, Perfect acc: 0.0106
+Epoch:  3, Train loss: 0.1878, Perfect acc: 0.0387
+Epoch:  4, Train loss: 0.1692, Perfect acc: 0.0656
+Epoch:  5, Train loss: 0.1634, Perfect acc: 0.0737
+Epoch:  6, Train loss: 0.1582, Perfect acc: 0.0819
+Epoch:  7, Train loss: 0.1542, Perfect acc: 0.0850
+Epoch:  8, Train loss: 0.1470, Perfect acc: 0.0944
+Epoch:  9, Train loss: 0.1381, Perfect acc: 0.0969
+Epoch: 10, Train loss: 0.1343, Perfect acc: 0.1106
+Evaluation:: Loss: 0.1291, Perfect acc: 0.1110
+Epoch: 11, Train loss: 0.1282, Perfect acc: 0.1356
+Epoch: 12, Train loss: 0.1254, Perfect acc: 0.1556
+Epoch: 13, Train loss: 0.1191, Perfect acc: 0.1800
+Epoch: 14, Train loss: 0.1166, Perfect acc: 0.1950
+Epoch: 15, Train loss: 0.1124, Perfect acc: 0.2144
+Epoch: 16, Train loss: 0.1109, Perfect acc: 0.2281
+Epoch: 17, Train loss: 0.1086, Perfect acc: 0.2387
+Epoch: 18, Train loss: 0.1049, Perfect acc: 0.2550
+Epoch: 19, Train loss: 0.1014, Perfect acc: 0.2762
+Epoch: 20, Train loss: 0.0980, Perfect acc: 0.3006
+Evaluation:: Loss: 0.0974, Perfect acc: 0.2530
+Epoch: 21, Train loss: 0.0951, Perfect acc: 0.3175
+Epoch: 22, Train loss: 0.0954, Perfect acc: 0.3256
+Epoch: 23, Train loss: 0.0908, Perfect acc: 0.3556
+Epoch: 24, Train loss: 0.0895, Perfect acc: 0.3581
+Epoch: 25, Train loss: 0.0863, Perfect acc: 0.3806
+Epoch: 26, Train loss: 0.0837, Perfect acc: 0.4000
+Epoch: 27, Train loss: 0.0811, Perfect acc: 0.4319
+Epoch: 28, Train loss: 0.0795, Perfect acc: 0.4406
+Epoch: 29, Train loss: 0.0772, Perfect acc: 0.4562
+Epoch: 30, Train loss: 0.0725, Perfect acc: 0.4844
+Evaluation:: Loss: 0.0739, Perfect acc: 0.4630
+Epoch: 31, Train loss: 0.0721, Perfect acc: 0.4981
+Epoch: 32, Train loss: 0.0698, Perfect acc: 0.5088
+Epoch: 33, Train loss: 0.0683, Perfect acc: 0.5194
+Epoch: 34, Train loss: 0.0661, Perfect acc: 0.5381
+Epoch: 35, Train loss: 0.0664, Perfect acc: 0.5387
+Epoch: 36, Train loss: 0.0649, Perfect acc: 0.5613
+Epoch: 37, Train loss: 0.0638, Perfect acc: 0.5687
+Epoch: 38, Train loss: 0.0612, Perfect acc: 0.5863
+Epoch: 39, Train loss: 0.0614, Perfect acc: 0.5925
+Epoch: 40, Train loss: 0.0593, Perfect acc: 0.6038
+Evaluation:: Loss: 0.0619, Perfect acc: 0.5600
+Epoch: 41, Train loss: 0.0595, Perfect acc: 0.6125
+Epoch: 42, Train loss: 0.0573, Perfect acc: 0.6056
+Epoch: 43, Train loss: 0.0583, Perfect acc: 0.6112
+Epoch: 44, Train loss: 0.0543, Perfect acc: 0.6306
+Epoch: 45, Train loss: 0.0535, Perfect acc: 0.6450
+Epoch: 46, Train loss: 0.0511, Perfect acc: 0.6556
+Epoch: 47, Train loss: 0.0496, Perfect acc: 0.6650
+Epoch: 48, Train loss: 0.0518, Perfect acc: 0.6594
+Epoch: 49, Train loss: 0.0492, Perfect acc: 0.6719
+Epoch: 50, Train loss: 0.0496, Perfect acc: 0.6669
+Evaluation:: Loss: 0.0461, Perfect acc: 0.6710
+Epoch: 51, Train loss: 0.0470, Perfect acc: 0.6850
+Epoch: 52, Train loss: 0.0466, Perfect acc: 0.6875
+Epoch: 53, Train loss: 0.0445, Perfect acc: 0.7063
+Epoch: 54, Train loss: 0.0452, Perfect acc: 0.6944
+Epoch: 55, Train loss: 0.0423, Perfect acc: 0.7194
+Epoch: 56, Train loss: 0.0463, Perfect acc: 0.6969
+Epoch: 57, Train loss: 0.0439, Perfect acc: 0.7069
+Epoch: 58, Train loss: 0.0416, Perfect acc: 0.7212
+Epoch: 59, Train loss: 0.0439, Perfect acc: 0.7125
+Epoch: 60, Train loss: 0.0405, Perfect acc: 0.7362
+Evaluation:: Loss: 0.0445, Perfect acc: 0.6890
+Epoch: 61, Train loss: 0.0429, Perfect acc: 0.7175
+Epoch: 62, Train loss: 0.0423, Perfect acc: 0.7269
+Epoch: 63, Train loss: 0.0414, Perfect acc: 0.7188
+Epoch: 64, Train loss: 0.0444, Perfect acc: 0.7100
+Epoch: 65, Train loss: 0.0423, Perfect acc: 0.7319
+Epoch: 66, Train loss: 0.0448, Perfect acc: 0.7100
+Epoch: 67, Train loss: 0.0460, Perfect acc: 0.6981
+Epoch: 68, Train loss: 0.0443, Perfect acc: 0.7106
+Epoch: 69, Train loss: 0.0446, Perfect acc: 0.7125
+Epoch: 70, Train loss: 0.0445, Perfect acc: 0.7094
+Evaluation:: Loss: 0.0445, Perfect acc: 0.6970
+Epoch: 71, Train loss: 0.0480, Perfect acc: 0.6975
+Epoch: 72, Train loss: 0.0457, Perfect acc: 0.6994
+Epoch: 73, Train loss: 0.0436, Perfect acc: 0.7025
+Epoch: 74, Train loss: 0.0458, Perfect acc: 0.7019
+Epoch: 75, Train loss: 0.0435, Perfect acc: 0.7100
+Epoch: 76, Train loss: 0.0428, Perfect acc: 0.7212
+Epoch: 77, Train loss: 0.0448, Perfect acc: 0.7094
+Epoch: 78, Train loss: 0.0425, Perfect acc: 0.7131
+Epoch: 79, Train loss: 0.0441, Perfect acc: 0.7125
+Epoch: 80, Train loss: 0.0445, Perfect acc: 0.7131
+Evaluation:: Loss: 0.0496, Perfect acc: 0.6560
+Epoch: 81, Train loss: 0.0447, Perfect acc: 0.7106
+Epoch: 82, Train loss: 0.0443, Perfect acc: 0.7081
+Epoch: 83, Train loss: 0.0460, Perfect acc: 0.7019
+Epoch: 84, Train loss: 0.0450, Perfect acc: 0.7100
+Epoch: 85, Train loss: 0.0446, Perfect acc: 0.7056
+Epoch: 86, Train loss: 0.0443, Perfect acc: 0.7069
+Epoch: 87, Train loss: 0.0448, Perfect acc: 0.7063
+Epoch: 88, Train loss: 0.0455, Perfect acc: 0.7063
+Epoch: 89, Train loss: 0.0432, Perfect acc: 0.7200
+Epoch: 90, Train loss: 0.0443, Perfect acc: 0.7044
+Evaluation:: Loss: 0.0437, Perfect acc: 0.6890
+Epoch: 91, Train loss: 0.0425, Perfect acc: 0.7231
+Epoch: 92, Train loss: 0.0440, Perfect acc: 0.7075
+Epoch: 93, Train loss: 0.0434, Perfect acc: 0.7150
+Epoch: 94, Train loss: 0.0461, Perfect acc: 0.7087
+Epoch: 95, Train loss: 0.0431, Perfect acc: 0.7131
+Epoch: 96, Train loss: 0.0447, Perfect acc: 0.7050
+Epoch: 97, Train loss: 0.0424, Perfect acc: 0.7219
+Epoch: 98, Train loss: 0.0456, Perfect acc: 0.7031
+Epoch: 99, Train loss: 0.0451, Perfect acc: 0.6987
+Epoch: 100, Train loss: 0.0450, Perfect acc: 0.7075
+Evaluation:: Loss: 0.0420, Perfect acc: 0.7060
+Evaluation:: Loss: 0.0420, Perfect acc: 0.7060
+2403.28user 96.15system 53:45.26elapsed 77%CPU (0avgtext+0avgdata 1991008maxresident)k
+1896inputs+16768outputs (0major+2412282minor)pagefaults 0swaps

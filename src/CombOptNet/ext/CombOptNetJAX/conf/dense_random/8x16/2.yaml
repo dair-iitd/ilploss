@@ -1,0 +1,39 @@
+"seed": 0
+
+"working_dir": "results/dense_random/8x16/2"
+"use_ray": true
+"ray_params":
+  "num_cpus": 8
+
+"data_params":
+  "base_dataset_path": "datasets"
+  "dataset_type": "static_constraints"
+  "dataset_specification": "dense_random"
+  "dataset_seed": 2
+  "num_gt_variables": 16
+  "num_gt_constraints": 8
+  "train_dataset_size": 1600
+  "loader_params":
+    "batch_size": 8
+    "shuffle": true
+
+"train_epochs": 100
+"eval_every": 10
+
+"trainer_params":
+  "use_cuda": true
+  "loss_name": "L1"
+  "optimizer_name": "Adam"
+  "optimizer_params":
+    "lr": 0.0005
+
+  "trainer_name": "RandomConstraintLearningTrainer"
+
+  "model_params":
+    "constraint_module_params":
+      "num_constraints": 16
+      "normalize_constraints": true
+
+    "solver_module_params":
+      "solver_name": "CombOptNet"
+      "tau": 0.5

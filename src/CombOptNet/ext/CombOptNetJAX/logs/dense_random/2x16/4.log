@@ -1,0 +1,275 @@
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+LLVM ERROR: pthread_create failed: Resource temporarily unavailable
+*** SIGABRT received at time=1652928716 on cpu 61 ***
+PC: @     0x7ff7f8805428  (unknown)  raise
+    @     0x7ff7f8bab390       3872  (unknown)
+    @     0x7ff79a775cb1         48  llvm::report_fatal_error()
+    @     0x7ff79a707100         96  ReportErrnumFatal()
+    @     0x7ff79a7072f8        128  llvm::llvm_execute_on_thread_impl()
+    @     0x7ff79a70779d         48  llvm::thread::thread<>()
+    @     0x7ff79a709871        144  llvm::ThreadPool::ThreadPool()
+    @     0x7ff79a61f74f        496  mlir::MLIRContext::MLIRContext()
+    @     0x7ff79a61fa19        160  mlir::MLIRContext::MLIRContext()
+    @     0x7ff7982f50cc       2528  xla::cpu::CpuCompiler::RunBackend()
+    @     0x7ff7982e157a       4432  xla::TfrtCpuClient::Compile()
+    @     0x7ff7982202b5        976  xla::PyClient::Compile()
+    @     0x7ff797f8ab5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+    @     0x7ff797f8b434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7ff797f6c821        544  pybind11::cpp_function::dispatcher()
+    @     0x556bb17dc562  110348120  _PyCFunction_FastCallDict
+    @     0x556bb194c660  (unknown)  (unknown)
+[2022-05-19 08:21:56,084 E 72031 78584] logging.cc:325: *** SIGABRT received at time=1652928716 on cpu 61 ***
+[2022-05-19 08:21:56,085 E 72031 78584] logging.cc:325: PC: @     0x7ff7f8805428  (unknown)  raise
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff7f8bab390       3872  (unknown)
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a775cb1         48  llvm::report_fatal_error()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a707100         96  ReportErrnumFatal()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a7072f8        128  llvm::llvm_execute_on_thread_impl()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a70779d         48  llvm::thread::thread<>()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a709871        144  llvm::ThreadPool::ThreadPool()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a61f74f        496  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff79a61fa19        160  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff7982f50cc       2528  xla::cpu::CpuCompiler::RunBackend()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff7982e157a       4432  xla::TfrtCpuClient::Compile()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff7982202b5        976  xla::PyClient::Compile()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff797f8ab5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff797f8b434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x7ff797f6c821        544  pybind11::cpp_function::dispatcher()
+[2022-05-19 08:21:56,087 E 72031 78584] logging.cc:325:     @     0x556bb17dc562  110348120  _PyCFunction_FastCallDict
+[2022-05-19 08:21:56,090 E 72031 78584] logging.cc:325:     @     0x556bb194c660  (unknown)  (unknown)
+Fatal Python error: Aborted
+
+Stack (most recent call first):
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 360 in backend_compile
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 297 in xla_primitive_callable
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 179 in cached
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 186 in wrapper
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 248 in apply_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 603 in process_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 264 in bind
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/lax/lax.py", line 126 in sign
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 559 in sign
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/utils/comboptnet_utils.py", line 43 in compute_delta_y
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 222 in mismatch_function
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/linear_util.py", line 166 in call_wrapped
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/partial_eval.py", line 505 in trace_to_jaxpr
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 102 in linearize
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 115 in vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 1997 in _vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 901 in value_and_grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 829 in grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 123 in backward
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/torch/autograd/function.py", line 77 in apply
+Command terminated by signal 6
+4.97user 1.42system 0:23.31elapsed 27%CPU (0avgtext+0avgdata 1992768maxresident)k
+1888inputs+48outputs (0major+304317minor)pagefaults 0swaps
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+LLVM ERROR: pthread_create failed: Resource temporarily unavailable
+*** SIGABRT received at time=1652929027 on cpu 8 ***
+PC: @     0x7f8974fc8428  (unknown)  raise
+    @     0x7f897536e390       3872  (unknown)
+    @     0x7f8916f38cb1         48  llvm::report_fatal_error()
+    @     0x7f8916eca100         96  ReportErrnumFatal()
+    @     0x7f8916eca2f8        128  llvm::llvm_execute_on_thread_impl()
+    @     0x7f8916eca79d         48  llvm::thread::thread<>()
+    @     0x7f8916ecc871        144  llvm::ThreadPool::ThreadPool()
+    @     0x7f8916de274f        496  mlir::MLIRContext::MLIRContext()
+    @     0x7f8916de2a19        160  mlir::MLIRContext::MLIRContext()
+    @     0x7f8914ab80cc       2528  xla::cpu::CpuCompiler::RunBackend()
+    @     0x7f8914aa457a       4432  xla::TfrtCpuClient::Compile()
+    @     0x7f89149e32b5        976  xla::PyClient::Compile()
+    @     0x7f891474db5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+    @     0x7f891474e434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+    @     0x7f891472f821        544  pybind11::cpp_function::dispatcher()
+    @     0x55bf4ddf2562  (unknown)  _PyCFunction_FastCallDict
+    @     0x55bf4df62660  (unknown)  (unknown)
+[2022-05-19 08:27:07,774 E 100469 111694] logging.cc:325: *** SIGABRT received at time=1652929027 on cpu 8 ***
+[2022-05-19 08:27:07,774 E 100469 111694] logging.cc:325: PC: @     0x7f8974fc8428  (unknown)  raise
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f897536e390       3872  (unknown)
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916f38cb1         48  llvm::report_fatal_error()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916eca100         96  ReportErrnumFatal()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916eca2f8        128  llvm::llvm_execute_on_thread_impl()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916eca79d         48  llvm::thread::thread<>()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916ecc871        144  llvm::ThreadPool::ThreadPool()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916de274f        496  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8916de2a19        160  mlir::MLIRContext::MLIRContext()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8914ab80cc       2528  xla::cpu::CpuCompiler::RunBackend()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f8914aa457a       4432  xla::TfrtCpuClient::Compile()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f89149e32b5        976  xla::PyClient::Compile()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f891474db5c       1632  pybind11::detail::argument_loader<>::call_impl<>()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f891474e434        192  pybind11::cpp_function::initialize<>()::{lambda()#3}::_FUN()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x7f891472f821        544  pybind11::cpp_function::dispatcher()
+[2022-05-19 08:27:07,777 E 100469 111694] logging.cc:325:     @     0x55bf4ddf2562  (unknown)  _PyCFunction_FastCallDict
+[2022-05-19 08:27:07,781 E 100469 111694] logging.cc:325:     @     0x55bf4df62660  (unknown)  (unknown)
+Fatal Python error: Aborted
+
+Stack (most recent call first):
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 360 in backend_compile
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 297 in xla_primitive_callable
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 179 in cached
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/util.py", line 186 in wrapper
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/xla.py", line 248 in apply_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 603 in process_primitive
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/core.py", line 264 in bind
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/lax/lax.py", line 455 in _convert_element_type
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 272 in <listcomp>
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 272 in _promote_dtypes
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 326 in _promote_args
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 421 in <lambda>
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 5873 in <lambda>
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/numpy/lax_numpy.py", line 5869 in deferring_binary_op
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 232 in mismatch_function
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/linear_util.py", line 166 in call_wrapped
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/partial_eval.py", line 505 in trace_to_jaxpr
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 102 in linearize
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/interpreters/ad.py", line 115 in vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 1997 in _vjp
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 901 in value_and_grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/api.py", line 829 in grad_f
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/jax/_src/traceback_util.py", line 183 in reraise_with_filtered_traceback
+  File "/home/rishabh/btp/src/CombOptNet/ext/CombOptNetJAX/models/comboptnet.py", line 123 in backward
+  File "/home/rishabh/.local/share/virtualenvs/CombOptNetJAX-wSKOtHoc/lib/python3.6/site-packages/torch/autograd/function.py", line 77 in apply
+Command terminated by signal 6
+6.88user 1.83system 0:26.94elapsed 32%CPU (0avgtext+0avgdata 1994740maxresident)k
+0inputs+48outputs (0major+317533minor)pagefaults 0swaps
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+Successfully loaded Static Constraints dataset.
+Number of distinct solutions in train set: 1594
+Number of distinct solutions in test set: 996
+[2m[36m(ilp_solver pid=6002)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=6002)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=6014)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=6014)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5962)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5962)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5975)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5975)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5995)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5995)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5981)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5981)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5974)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5974)[0m Using license file /home/rishabh/gurobi.lic
+[2m[36m(ilp_solver pid=5985)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=5985)[0m Using license file /home/rishabh/gurobi.lic
+Evaluation:: Loss: 0.1877, Perfect acc: 0.0010
+Epoch:  1, Train loss: 0.1686, Perfect acc: 0.0075
+Epoch:  2, Train loss: 0.1367, Perfect acc: 0.0275
+Epoch:  3, Train loss: 0.1186, Perfect acc: 0.0456
+Epoch:  4, Train loss: 0.1081, Perfect acc: 0.0644
+Epoch:  5, Train loss: 0.1002, Perfect acc: 0.0838
+Epoch:  6, Train loss: 0.0944, Perfect acc: 0.0975
+Epoch:  7, Train loss: 0.0891, Perfect acc: 0.1150
+Epoch:  8, Train loss: 0.0844, Perfect acc: 0.1281
+Epoch:  9, Train loss: 0.0799, Perfect acc: 0.1369
+Epoch: 10, Train loss: 0.0761, Perfect acc: 0.1531
+Evaluation:: Loss: 0.0756, Perfect acc: 0.1480
+Epoch: 11, Train loss: 0.0718, Perfect acc: 0.1656
+Epoch: 12, Train loss: 0.0683, Perfect acc: 0.1819
+Epoch: 13, Train loss: 0.0643, Perfect acc: 0.1938
+Epoch: 14, Train loss: 0.0595, Perfect acc: 0.2156
+Epoch: 15, Train loss: 0.0552, Perfect acc: 0.2313
+Epoch: 16, Train loss: 0.0521, Perfect acc: 0.2444
+Epoch: 17, Train loss: 0.0504, Perfect acc: 0.2487
+Epoch: 18, Train loss: 0.0486, Perfect acc: 0.2531
+Epoch: 19, Train loss: 0.0471, Perfect acc: 0.2619
+Epoch: 20, Train loss: 0.0468, Perfect acc: 0.2625
+Evaluation:: Loss: 0.0465, Perfect acc: 0.2620
+Epoch: 21, Train loss: 0.0459, Perfect acc: 0.2675
+Epoch: 22, Train loss: 0.0455, Perfect acc: 0.2700
+Epoch: 23, Train loss: 0.0450, Perfect acc: 0.2756
+Epoch: 24, Train loss: 0.0444, Perfect acc: 0.2781
+Epoch: 25, Train loss: 0.0441, Perfect acc: 0.2794
+Epoch: 26, Train loss: 0.0433, Perfect acc: 0.2806
+Epoch: 27, Train loss: 0.0426, Perfect acc: 0.2850
+[2m[36m(ilp_solver pid=24789)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=24789)[0m Using license file /home/rishabh/gurobi.lic
+Epoch: 28, Train loss: 0.0416, Perfect acc: 0.2800
+Epoch: 29, Train loss: 0.0407, Perfect acc: 0.2888
+Epoch: 30, Train loss: 0.0388, Perfect acc: 0.2863
+Evaluation:: Loss: 0.0387, Perfect acc: 0.2960
+Epoch: 31, Train loss: 0.0376, Perfect acc: 0.2975
+Epoch: 32, Train loss: 0.0352, Perfect acc: 0.2969
+Epoch: 33, Train loss: 0.0321, Perfect acc: 0.3056
+Epoch: 34, Train loss: 0.0278, Perfect acc: 0.3137
+Epoch: 35, Train loss: 0.0225, Perfect acc: 0.3319
+Epoch: 36, Train loss: 0.0165, Perfect acc: 0.3831
+Epoch: 37, Train loss: 0.0118, Perfect acc: 0.4706
+Epoch: 38, Train loss: 0.0106, Perfect acc: 0.5181
+Epoch: 39, Train loss: 0.0093, Perfect acc: 0.5606
+Epoch: 40, Train loss: 0.0081, Perfect acc: 0.6156
+Evaluation:: Loss: 0.0082, Perfect acc: 0.6050
+Epoch: 41, Train loss: 0.0074, Perfect acc: 0.6525
+Epoch: 42, Train loss: 0.0068, Perfect acc: 0.6806
+Epoch: 43, Train loss: 0.0063, Perfect acc: 0.7100
+Epoch: 44, Train loss: 0.0056, Perfect acc: 0.7381
+Epoch: 45, Train loss: 0.0058, Perfect acc: 0.7356
+Epoch: 46, Train loss: 0.0059, Perfect acc: 0.7294
+Epoch: 47, Train loss: 0.0049, Perfect acc: 0.7688
+Epoch: 48, Train loss: 0.0051, Perfect acc: 0.7600
+Epoch: 49, Train loss: 0.0057, Perfect acc: 0.7400
+Epoch: 50, Train loss: 0.0054, Perfect acc: 0.7419
+Evaluation:: Loss: 0.0055, Perfect acc: 0.7340
+Epoch: 51, Train loss: 0.0055, Perfect acc: 0.7269
+Epoch: 52, Train loss: 0.0055, Perfect acc: 0.7406
+Epoch: 53, Train loss: 0.0053, Perfect acc: 0.7481
+Epoch: 54, Train loss: 0.0051, Perfect acc: 0.7412
+Epoch: 55, Train loss: 0.0053, Perfect acc: 0.7531
+Epoch: 56, Train loss: 0.0053, Perfect acc: 0.7506
+Epoch: 57, Train loss: 0.0050, Perfect acc: 0.7575
+Epoch: 58, Train loss: 0.0054, Perfect acc: 0.7369
+Epoch: 59, Train loss: 0.0056, Perfect acc: 0.7381
+Epoch: 60, Train loss: 0.0057, Perfect acc: 0.7331
+Evaluation:: Loss: 0.0060, Perfect acc: 0.7290
+[2m[36m(ilp_solver pid=14351)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=14351)[0m Using license file /home/rishabh/gurobi.lic
+Epoch: 61, Train loss: 0.0054, Perfect acc: 0.7519
+Epoch: 62, Train loss: 0.0051, Perfect acc: 0.7538
+Epoch: 63, Train loss: 0.0054, Perfect acc: 0.7344
+Epoch: 64, Train loss: 0.0056, Perfect acc: 0.7188
+Epoch: 65, Train loss: 0.0053, Perfect acc: 0.7462
+Epoch: 66, Train loss: 0.0055, Perfect acc: 0.7438
+Epoch: 67, Train loss: 0.0052, Perfect acc: 0.7488
+[2m[36m(ilp_solver pid=15124)[0m Academic license - for non-commercial use only - expires 2022-09-01
+[2m[36m(ilp_solver pid=15124)[0m Using license file /home/rishabh/gurobi.lic
+Epoch: 68, Train loss: 0.0050, Perfect acc: 0.7606
+Epoch: 69, Train loss: 0.0057, Perfect acc: 0.7262
+Epoch: 70, Train loss: 0.0053, Perfect acc: 0.7538
+Evaluation:: Loss: 0.0059, Perfect acc: 0.6950
+Epoch: 71, Train loss: 0.0060, Perfect acc: 0.7188
+Epoch: 72, Train loss: 0.0052, Perfect acc: 0.7344
+Epoch: 73, Train loss: 0.0051, Perfect acc: 0.7462
+Epoch: 74, Train loss: 0.0054, Perfect acc: 0.7488
+Epoch: 75, Train loss: 0.0054, Perfect acc: 0.7375
+Epoch: 76, Train loss: 0.0056, Perfect acc: 0.7444
+Epoch: 77, Train loss: 0.0051, Perfect acc: 0.7525
+Epoch: 78, Train loss: 0.0048, Perfect acc: 0.7575
+Epoch: 79, Train loss: 0.0049, Perfect acc: 0.7650
+Epoch: 80, Train loss: 0.0057, Perfect acc: 0.7281
+Evaluation:: Loss: 0.0055, Perfect acc: 0.7400
+Epoch: 81, Train loss: 0.0061, Perfect acc: 0.7194
+Epoch: 82, Train loss: 0.0053, Perfect acc: 0.7450
+Epoch: 83, Train loss: 0.0051, Perfect acc: 0.7569
+Epoch: 84, Train loss: 0.0050, Perfect acc: 0.7431
+Epoch: 85, Train loss: 0.0048, Perfect acc: 0.7688
+Epoch: 86, Train loss: 0.0053, Perfect acc: 0.7438
+Epoch: 87, Train loss: 0.0051, Perfect acc: 0.7656
+Epoch: 88, Train loss: 0.0053, Perfect acc: 0.7331
+Epoch: 89, Train loss: 0.0052, Perfect acc: 0.7462
+Epoch: 90, Train loss: 0.0059, Perfect acc: 0.7262
+Evaluation:: Loss: 0.0049, Perfect acc: 0.7660
+Epoch: 91, Train loss: 0.0058, Perfect acc: 0.7300
+Epoch: 92, Train loss: 0.0058, Perfect acc: 0.7175
+Epoch: 93, Train loss: 0.0056, Perfect acc: 0.7462
+Epoch: 94, Train loss: 0.0056, Perfect acc: 0.7375
+Epoch: 95, Train loss: 0.0055, Perfect acc: 0.7356
+Epoch: 96, Train loss: 0.0060, Perfect acc: 0.7362
+Epoch: 97, Train loss: 0.0059, Perfect acc: 0.7219
+Epoch: 98, Train loss: 0.0048, Perfect acc: 0.7694
+Epoch: 99, Train loss: 0.0054, Perfect acc: 0.7500
+Epoch: 100, Train loss: 0.0058, Perfect acc: 0.7256
+Evaluation:: Loss: 0.0064, Perfect acc: 0.6940
+Evaluation:: Loss: 0.0064, Perfect acc: 0.6940
+./main.py conf/${t}/${m}x16/${i}.yaml  1966.73s user 49.17s system 82% cpu 40:48.80 total

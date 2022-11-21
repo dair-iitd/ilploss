@@ -1,0 +1,51 @@
+
+working_dir: '/home/cse/phd/csz178057/phd/comboptnet/btp/'
+
+base_cmd: '/home/cse/phd/csz178057/.conda/envs/con/bin/python trainer.py '
+
+
+cross_product_params:
+  - name: config 
+    short_name: 'c'
+    values:
+      - conf/tmp/vis_sudoku/20220119/nbr_ce_clr-0.0001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_ce_clr-0.0001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_ce_clr-0.001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_ce_clr-0.001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_margin_clr-0.0001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_margin_clr-0.0001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_margin_clr-0.001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/nbr_margin_clr-0.001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_ce_clr-0.0001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_ce_clr-0.0001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_ce_clr-0.001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_ce_clr-0.001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_margin_clr-0.0001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_margin_clr-0.0001_d-2x3_nc-300_r-true.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_margin_clr-0.001_d-2x3_nc-300_r-false.yaml
+      - conf/tmp/vis_sudoku/20220119/proj_margin_clr-0.001_d-2x3_nc-300_r-true.yaml 
+
+    #  - name: model.core.init_args.encoder.init_args.c_encoder.init_args.renormalize
+    #    values: ['false','true']
+    #    short_name: 'r'
+    #
+    #  - name: model.configure_optim_args.optim_args.c_encoder.lr
+    #    values: [1.0e-3,1.0e-4]
+    #    short_name: 'clr'
+
+
+param_groups:
+    short_names: []
+    names: []
+    values_list: [[]]
+        
+
+module_load_str: '' 
+order: True 
+# test mode only
+do_not_pass_params: []
+parse_value_fns:
+    data.data_path: extract_sudoku_size
+    config: parse_filename
+
+    
