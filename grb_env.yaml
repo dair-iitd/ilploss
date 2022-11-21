@@ -1,8 +1,0 @@
-name: grb
-
-dependencies:
-  - conda-forge::numpy
-  - conda-forge::python
-  - conda-forge::rich
-  - conda-forge::scipy
-  - gurobi::gurobi
