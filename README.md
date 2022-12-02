@@ -33,7 +33,7 @@ Similarly, for CombOptNet, run:
 ./trainer.py --config conf/neurips/binary_random/comboptnet/test/8x16/0.yaml
 ```
 
-__[TODO: add instructions for neural baselines]__
+<!-- __[TODO: add instructions for neural baselines]__ ->
 
 # Citation
 
