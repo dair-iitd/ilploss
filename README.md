@@ -22,18 +22,18 @@ Download and unzip the data from [here](https://drive.google.com/file/d/1jP80OhG
 All our experiments are available as config files in the `conf/` directory. For example to train and test ILP-Loss on random constraints for the binary domain with 8 ground truth constraints and dataset seed 0, run:
 
 ```
-./trainer.py --config conf/neurips/binary_random/ilploss/8x16/0.yaml
-./trainer.py --config conf/neurips/binary_random/ilploss/test/8x16/0.yaml
+./trainer.py --config conf/random_constraints/binary_random/ilploss/8x16/0.yaml
 ```
 
+
+<!-- 
 Similarly, for CombOptNet, run:
 
 ```
-./trainer.py --config conf/neurips/binary_random/comboptnet/8x16/0.yaml
-./trainer.py --config conf/neurips/binary_random/comboptnet/test/8x16/0.yaml
+./trainer.py --config conf/binary_random/comboptnet/8x16/0.yaml
+./trainer.py --config conf/binary_random/comboptnet/test/8x16/0.yaml
 ```
-
-<!-- __[TODO: add instructions for neural baselines]__ ->
+__[TODO: add instructions for neural baselines]__ -->
 
 # Citation
 
