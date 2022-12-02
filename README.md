@@ -11,7 +11,7 @@ conda env create -f env_export.yaml
 conda activate ilploss
 ```
 
-Download and unzip the data from __[TODO: add link]__ into a directory named `data/`.
+Download and unzip the data from [here](https://drive.google.com/file/d/1jP80OhGPCbkYudhvC1EjOZXtipgNgFYL/view?usp=sharing) into a directory named `data/`.
 
 # Run
 
