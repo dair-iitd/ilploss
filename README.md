@@ -1,6 +1,6 @@
 # A Solver-Free Framework for Scalable Learning in Neural ILP Architectures
 
-This repository contains the code to reproduce the results reported in the paper [A Solver-Free Framework for Scalable Learning in Neural ILP Architectures][paper], which has been accepted at NeurIPS 2022. We also provide the core components of our technique as a light-weight python [library][library].
+This repository contains the code to reproduce the results reported in the paper [A Solver-Free Framework for Scalable Learning in Neural ILP Architectures][paper], which has been accepted at NeurIPS 2022. We also provide the core components of our technique as a light-weight python [package][package].
 
 # Install
 
@@ -12,6 +12,9 @@ conda activate ilploss
 ```
 
 Download and unzip the data from [here](https://drive.google.com/drive/folders/1I_KdlIkdsfn8E_OekMhRH8cnb0ZnXJpz) <!-- [here](https://drive.google.com/file/d/1jP80OhGPCbkYudhvC1EjOZXtipgNgFYL/view?usp=sharing) --> into a directory named `data/`.
+
+We recommend [mamba](https://github.com/mamba-org/mamba), which drastically speeds up conda environment creation. This repo has been tested to work on Linux.
+
 # Run
 
 ```
@@ -47,4 +50,4 @@ __[TODO: add instructions for neural baselines]__ -->
 
 
 [paper]: https://arxiv.org/abs/2210.09082
-[library]: https://github.com/rishabh-ranjan/ilploss
+[package]: https://github.com/rishabh-ranjan/ilploss
