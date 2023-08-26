@@ -13,7 +13,9 @@ conda activate ilploss
 
 Download and unzip the data from [here](https://drive.google.com/drive/folders/1I_KdlIkdsfn8E_OekMhRH8cnb0ZnXJpz) <!-- [here](https://drive.google.com/file/d/1jP80OhGPCbkYudhvC1EjOZXtipgNgFYL/view?usp=sharing) --> into a directory named `data/`.
 
-We recommend [mamba](https://github.com/mamba-org/mamba), which drastically speeds up conda environment creation. This repo has been tested to work on Linux.
+We recommend [mamba](https://github.com/mamba-org/mamba), which drastically speeds up conda environment creation.
+
+The installation has been tested to work on Linux.
 
 # Run
 
